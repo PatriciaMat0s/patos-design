@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <title>patos:design // web design + development</title>
+    <link rel="icon"  href="./images/logo/favicon--patos-design.gif" type="image/gif">
+    <link rel="icon" type="image/ico" href="./images/logo/favicon--patos-design-svg.svg">
+
+
+    <meta name="description" content="Your brand's online representation crafted with design, tecnology and love.">
+
+  <style>
+    :root{
+    --turquoise: #3EC3C8;
+    --coral: #FF7278;  
+    --dark-violet: #321351;
+    --magenta: #7F1865;
+
+    --wasabi: #00CE93;
+    --yellow: #DDC022;
+
+    --perfect-pink: #DB4C85;
+    --ultramarine: #4646F6;
+    --dark-turquoise: #287473;
+    --violet:#824DB7;
+
+    --vanilla: #F5ECBB;
+    --med-gray: #c5c5c5;
+    }
+
+    /* Reset basic styling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Fullscreen container styling */
+    body, html {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #321351;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    /* Image styling */
+    .main-image {
+      max-width: 50%;
+      height: auto;
+      margin-bottom: 2%; 
+    }
+
+    @media (max-width: 576px) {
+        .main-image {
+          max-width: 75%;
+        padding-bottom: 50px;}
+    }
+
+    /* Circular button styling */
+    .home-button {
+      width: 80px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* position: relative; */
+  
+      border: 2px solid var(--violet); 
+      color: var(--violet); 
+      border-radius: 50%;
+      
+      font-family: "Roboto", sans-serif;
+      font-weight: 700;
+      text-decoration: none;
+      background-color: var(--dark-violet);
+      transition: all 0.5s ease;
+
+    }
+
+    
+
+    /* Button hover effect */
+    .home-button:hover {
+      border-color: var(--coral); /* Change border color on hover */
+      color: var(--coral); /* Change text color to match border */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Image section -->
+    <img src="./images/logo/logo--patos-design--spin-semicolon.gif" alt="Main Image" class="main-image">
+    
+    <!-- Circular button with text "Enter" and border -->
+    <a href="./home.html" class="home-button">enter</a>
+  </div>
+</body>
+</html>

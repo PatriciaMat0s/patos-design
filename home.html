@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>patos:design ◠ web development</title>
+    <link rel="icon"  href="./images/logo/favicon--patos-design.gif" type="image/gif">
+    <link rel="icon" type="image/ico" href="./images/logo/favicon--patos-design-svg.svg">
+
+
+    <meta name="description" content="Your brand's online representation crafted with design, tecnology and love.">
+    <!-- <meta name="keywords" content="HTML,CSS,JavaScript"> -->
+
+    <meta name="author" content="Patos">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/styles.css">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" defer crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" defer ></script>
+
+    <script src="./js/script.js" defer></script>
+
+
+      <!-- Font Awesome Icons cdn: -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+
+</head>
+
+<body class="body-home roboto-regular">
+
+
+<!-- inicio TOP NAV BAR -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+  <div class="container p-2">
+    <!-- Logo on the left -->
+    <a class="navbar-logo" href="#">
+      <img src="./images/logo/logo--patos-design.svg" alt="patos:design logo" > 
+    </a>
+
+    <!-- Hamburger button for smaller screens -->
+    <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav text-center">
+        <!-- Nav links with icons in circles -->
+        <li class="nav-item">
+          <a class="nav-link icon-link active" href="home.html">
+            <div class="icon-circle"> 
+              <img src="./images/icons/home.svg" alt="Home" class="icon"> 
+              <span class="link-text">home</span>
+            </div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link icon-link " href="./pages/about.html"> 
+            <div class="icon-circle">
+              <img src="./images/icons/about-2.svg" alt="About" class="icon"> 
+              <span class="link-text">about</span>
+            </div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link icon-link" href="./pages/projects.html">
+            <div class="icon-circle">
+              <img src="./images/icons/projects-2.svg" alt="Projects" class="icon"> 
+              <span class="link-text">projects</span>
+            </div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link icon-link" href="./pages/contact.html">
+            <div class="icon-circle">
+              <img src="./images/icons/contact.svg" alt="Contact" class="icon"> 
+              <span class="link-text">contact</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- ACABA TOP NAV BAR -->
+
+
+  
+<!-- colocar som na pagina: -->
+  <audio id="pageSfx" src="./sound/bubbles-14830-sfx-pixabay.mp3"></audio>
+
+
+
+<!-- animaçao bolinhas javascript: -->
+<div id="wrap" class="container-fluid p-2">
+  <p><span>hi, i'm <span class="patos">patos:</span></span><br>
+     let's make fun websites together!</p>
+</div>
+<!-- fim animaçao bolinhas javascript -->
+
+
+
+
+
+
+<!-- ==================================== 1-patos design SECTION:-->
+<div class="container-fluid p-0">
+  <div class="outer-div">
+    <div class="container"> 
+      
+      <!-- row Heading subtitlo -->
+      <div class="row d-flex align-items-center p-2">
+          <div class="col ">
+              <h2 class="roboto-bold">THIS IS PATOS:DESIGN</h2>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Row with Left (Text) and Right (Circles) Columns -->
+   <div class="container">
+  <div class="row">
+      
+      <!-- Left Column with Text Content ***-->
+    <div class="col-md-3 text-section texto-left p-2">
+        <div >
+            <p>Patos believes that great ui/ux designs for the web check: <br>
+              <span style="color: var(--coral)">●</span> a structured yet visually appealing display of information; <br>
+              <span style="color: var(--coral)">●</span> a self-explanatory, very intuitive user experience; <br>
+              <span style="color: var(--coral)">●</span> a fun, engaging, dynamic experience of navigation; <br>
+              <!-- In essence, the six qualitities on the right: -->
+              
+            <p class="texto-coral">Each page envisioned as <br>a self-organized ecosystem.</p>
+          </p>
+        </div>
+    </div>
+  
+
+      <!-- Right Column with Circles d-flex flex-column align-items-end -->
+      <div class="col-md-6 container d-flex justify-content-center">
+          
+        <!-- uma linha de 6 circulos: -->
+        <div class="row">
+
+              <div class="col-lg-4 col-6">
+                  <div class="circle-cell circle-cell-green1">essential</div>
+              </div>
+
+              <div class="col-lg-4  col-6">
+                  <div class="circle-cell circle-cell-green2">assertive</div>
+              </div>
+
+              <div class="col-lg-4  col-6">
+                  <div class="circle-cell circle-cell-green3">intuitive</div>
+              </div>
+
+              <div class="col-lg-4  col-6">
+                  <div class="circle-cell circle-cell-green3">colorful</div>
+              </div>
+
+              <div class="col-lg-4  col-6">
+                  <div class="circle-cell circle-cell-green2">dynamic</div>
+              </div>
+
+              <div class="col-lg-4  col-6">
+                  <div class="circle-cell circle-cell-green1">vivacious</div>
+              </div>
+
+
+          </div>
+
+      </div>
+      <!-- ^fecho da Right Column with Circles -->
+</div>
+
+
+
+</div> <!-- divfinal -->
+
+      <!-- inicio section 1  - more -->
+      <div class="outer-outer-div-more container-fluid p-0 d-flex justify-content-end">
+        <div class="outer-div-more">
+          <div class="container"> 
+            
+            <!-- row Heading subtitlo -->
+            <div class="row d-flex align-items-center p-2">
+                <div class="col-sm-3 ">
+                    <a href="./pages/about.html"><h2 class="roboto-bold">more:</h2></a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- fim more -->
+<!-- </div> -->
+<!-- ==================================== fim section 1 patos design --->
+
+
+
+
+
+<!-- ==================================== INICIO 2-skills SECTION:-->
+<div class="container-fluid p-0">
+  <div class="outer-div">
+    <div class="container"> 
+      
+      <!-- row Heading subtitlo -->
+      <div class="row d-flex align-items-center p-2">
+          <div class="col ">
+              <h2 class="roboto-bold">WEAPONS OF CHOICE:</h2>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Row with Left (Text) and Right (Circles) Columns -->
+   <div class="container">
+  <div class="row">
+      
+      <!-- Left Column with Text Content ***-->
+    <div class="col-md-3 text-section texto-left p-2">
+        <div >
+            <p>The foundation for a great website is to truly understand the aims and the identity of your brand, as well as of your target-audience. <br>
+             
+              
+            <p class="texto-coral"> Et voilá: <br>bring in all the development and aesthetic aspects!</p>
+          </p>
+        </div>
+    </div>
+  
+
+      <!-- Right Column with Circles d-flex flex-column align-items-end -->
+      <div class="col-md-6 container d-flex justify-content-center">
+          
+        <!-- uma linha de 6 circulos: -->
+        <div class="row">
+
+              <div class="col-lg-4 col-6">
+                  <div class="circle-cell circle-cell-rose1">prototyping</div>
+              </div>
+
+              <div class="col-lg-4  col-6">
+                  <div class="circle-cell circle-cell-rose2">front-end dev</div>
+              </div>
+
+              <div class="col-lg-4  col-6">
+                  <div class="circle-cell circle-cell-rose3">web dev</div>
+              </div>
+
+              <div class="col-lg-4  col-6">
+                  <div class="circle-cell circle-cell-rose3">design</div>
+              </div>
+
+              <div class="col-lg-4  col-6">
+                  <div class="circle-cell circle-cell-rose2">ui design</div>
+              </div>
+
+              <div class="col-lg-4  col-6">
+                  <div class="circle-cell circle-cell-rose1">motion graphics</div>
+              </div>
+
+
+              <!-- skills especificas: -->
+              <div class="col-lg-4 col-6">
+                <div class="circle-cell-skills">html+css</div>
+            </div>
+
+            <div class="col-lg-4  col-6">
+                <div class="circle-cell-skills">javascript</div>
+            </div>
+
+            <div class="col-lg-4  col-6">
+                <div class="circle-cell-skills">bootstrap</div>
+            </div>
+
+            <div class="col-lg-4  col-6">
+                <div class="circle-cell-skills">wordpress</div>
+            </div>
+
+            <div class="col-lg-4  col-6">
+                <div class="circle-cell-skills">angular</div>
+            </div>
+
+            <div class="col-lg-4  col-6">
+                <div class="circle-cell-skills">java</div>
+            </div>
+
+
+          </div>
+
+
+      
+      </div> 
+      <!-- ^fecho da Right Column with Circles -->
+
+
+</div>
+
+
+
+
+
+</div> <!-- divfinal -->
+
+      <!-- inicio section 2 more -->
+      <div class="container-fluid p-0 d-flex justify-content-end">
+        <div class="outer-div-more">
+          <div class="container"> 
+            
+            <!-- row Heading subtitlo -->
+            <div class="row d-flex align-items-center p-2">
+                <div class="col-sm-3 ">
+                    <a href="./pages/about.html"><h2 class="roboto-bold">more:</h2></a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- fim more -->
+<!-- </div> -->
+<!-- ==================================== fim section 2 weapons -->
+
+
+
+
+
+
+<!-- ==================================== inicio 3-PROJECTS SECTION:-->
+<div class="container-fluid p-0">
+  <div class="outer-div">
+    <div class="container"> 
+      
+      <!-- row Heading subtitlo -->
+      <div class="row d-flex align-items-center p-2">
+          <div class="col ">
+              <h2 class="roboto-bold">CHECK OUT MY WORK:</h2>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Row with Left (Text) and Right (Circles) Columns -->
+   <div class="container">
+  <div class="row">
+      
+      <!-- Left Column with Text Content ***-->
+    <div class="col-md-3 text-section texto-left p-2">
+        <div >
+          <p>UI/UX development is the most exciting way to put my eclectic background to use.  <br>
+            With a strong, healthy duality as a web developer, I combine the logical, technical aspects of it with creativity and a keen aesthetic sense.
+              
+            <p class="texto-coral">Criteria, dedication <br> and a little bit of cheekiness.</p>
+          </p>
+        </div>
+    </div>
+  
+
+      <!-- Right Column with Circles d-flex flex-column align-items-end -->
+      <div class="col-md-6 container d-flex justify-content-center">
+          
+        <!-- uma linha de 4 circulos: -->
+        <div class="row">
+
+              <div class="col-lg-6 col-md-2 col-sm-12">
+                <a href="./pages/project1.html"> 
+                  <div class="circle-cell-projects circle-cell-projects1"><span class="circle-projects-text">PATRÍCIA MATOS :ARTFOLIO</span></div>
+                  </a>
+              </div>
+
+              <div class="col-lg-6 col-md-2 col-sm-12">
+                <a href="./pages/project2.html"> 
+                  <div class="circle-cell-projects circle-cell-projects2"><span class="circle-projects-text">PATRÍCIA MATOS :VIDEOART</span></div>
+                  </a>
+              </div>
+
+              <div class="col-lg-6 col-md-2 col-sm-12">
+                <a href="./pages/project3.html"> 
+                    <div class="circle-cell-projects circle-cell-projects3">
+                      <span class="circle-projects-text">COLÉGIO FONTE 2 AMIGOS</span>
+                    </div>
+                </a> 
+              </div>
+
+              <div class="col-lg-6 col-md-2 col-sm-12">
+                <a href="./pages/project4.html"> 
+                  <div class="circle-cell-projects circle-cell-projects4"><span class="circle-projects-text">ESTORES TIRA-SOL</span></div>
+                  </a>
+              </div>
+
+              <!-- <div class="col-lg-6 col-md-2 col-sm-12">
+                  <div class="circle-cell-projects circle-cell--projects5">RESERVED FOR YOUR BRAND</div>
+              </div>
+
+              <div class="col-lg-6 col-md-2 col-sm-12">
+                  <div class="circle-cell-projects circle-cell--projects3">RESERVED FOR YOUR BRAND</div>
+              </div> -->
+
+          </div>
+
+      </div>
+      <!-- ^fecho da Right Column with Circles -->
+</div>
+
+
+
+</div> <!-- divfinal -->
+
+      <!-- inicio section 3  - more -->
+      <div class="container-fluid p-0 d-flex justify-content-end">
+        <div class="outer-div-more">
+          <div class="container"> 
+            
+            <!-- row Heading subtitlo -->
+            <div class="row d-flex align-items-center p-2">
+                <div class="col-sm-3 ">
+                  <a href="./pages/projects.html"><h2 class="roboto-bold">more:</h2></a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- fim more -->
+<!-- </div> -->
+<!-- ==================================== fim section 3 PROJECTS --->
+
+
+
+
+
+
+<!-- ==================================== inicio section 4 formulario --->
+
+<div class="container-fluid p-0">
+  <div class="outer-div">
+    <div class="container"> 
+      
+      <!-- row Heading subtitlo -->
+      <div class="row d-flex align-items-center p-2">
+          <div class="col ">
+              <h2 class="roboto-bold">HEY, DO GET IN TOUCH:</h2>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Row with Left (Text) and Right (Circles) Columns -->
+   <div class="container">
+  <div class="row">
+      
+      <!-- Left Column with Text Content ***-->
+    <div class="col-md-3 text-section texto-left p-2">
+        <div class="mob-center-icons">
+
+            <p>patos.design.web@gmail.com</p>  
+
+            <p>(+351) 927 601 883</p>
+            
+            <p>Porto, Portugal</p> 
+
+            <br>
+
+          <div >
+
+            <a href="https://linkedin.com" target="_blank" class="mx-0 ">
+              <i class= "fa-brands fa-linkedin"></i>
+            </a>
+        
+            <a href="https://github.com" target="_blank" class="">
+              <i class="fa-brands fa-github"></i>
+            </a>    
+        
+            <a href="https://www.behance.net/patos-design" target="_blank" class="">
+              <i class="fa-brands fa-behance"></i>
+            </a>
+        
+            <a href="https://www.instagram.com/p_a_t_o_s/" target="_blank" class="">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+          </div>
+
+        </div>
+    </div>
+  
+
+      <!-- Right Column with Circles d-flex flex-column align-items-end -->
+      <div class="col-md-6 container d-flex justify-content-center">
+          
+        <!-- uma linha de 4 circulos: -->
+        <div class="row">
+
+              
+
+         
+
+            <!-- <form id="contactForm">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+            
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+            
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" required></textarea>
+            
+              <button type="submit">Send</button>
+            </form> -->
+
+    <div class="my-form"> 
+            <form id="contactForm">
+              <div class="row mb-0">
+      
+                <!-- Name Field -->
+                <div >
+                  <label for="name" class="form-label "></label>
+                  <input type="text" class="form-control minha-label" id="name" name="name" placeholder="◗ your name:" required>
+                </div>
+      
+                <!-- Email Field -->
+                <div >
+                  <label for="email" class="form-label "></label>
+                  <input type="email" class="form-control minha-label" id="email" name="email" placeholder="◗ your email:" required>
+                </div>
+              </div>
+      
+                <!-- Dropdown for Subject -->
+                <div >
+                  <label for="subject" class="form-label "></label>
+                  <select class="form-select minha-label" id="subject" required>
+                    <option selected disabled>◗ select a subject <span >▾</span></option>
+                    <option value="1">work with patos:design!</option>
+                    <option value="2">schedule a meeting with patos:design</option>
+                    <option value="3">request a quote</option>
+                    <option value="4">general inquiry</option>
+                  </select>
+                </div>
+
+              
+              <!-- Message Field -->
+              <div >
+                <label for="message" class="form-label"></label>
+                <textarea class="form-control minha-label" id="message" name="message" rows="5" placeholder=" ◗ type your message:" required></textarea>
+              </div>
+      
+              <!-- Submit Button -->
+              <div class="text-center m-3 ">
+                <button type="submit" class="btn btn-light send-botao"><h2 class="roboto-bold">send:</h2></button>
+              </div>
+            </form>
+            </div>
+
+         
+
+      
+          </div>
+
+      </div>
+      <!-- ^fecho da Right Column with Circles -->
+</div>
+
+
+
+</div> <!-- divfinal sem ela o footer fica no container e nao no container fluid-->
+
+      
+<!-- ==================================== fim section 4 form --->
+
+
+
+
+
+
+
+
+
+<div class="container">
+  <img class="rabisco" src="./images/scribble--home.svg" alt="">
+</div>
+
+
+<!-- Footer inicio :-->
+
+<!-- Footer inicio :-->
+
+<footer class="container-fluid">
+  <!-- First Row: Logo and Slogan -->
+  <div class="footer-row logo">
+    <a href="./home.html"><img src="./images/logo/patos-design--logo-footer.svg" alt=""></a>
+    <br>
+    <span>let's make fun websites together!</span>
+  </div>
+
+  <!-- Padding -->
+  <div class="footer-row" style="padding: 2%;"></div>
+
+  <!-- Second Row: Navbar Links -->
+  <div class="footer-row">
+    <nav>
+      <a href="home.html" class="mx-2">home</a>
+      <a href="./pages/about.html" class="mx-2">about</a>
+      <a href="./pages/projects.html" class="mx-2">projects</a>
+      <a href="./pages/contact.html" class="mx-2">contact</a>
+    </nav>
+  </div>
+
+  <!-- Third Row: Contact Information -->
+  <div class="footer-row contacts">
+    <span class="mx-2">patos.design.web@gmail.com</span>
+    <span class="mx-2">+351 927 601 882</span>
+    <span class="mx-2">Porto, Portugal</span>
+  </div>
+
+  <!-- Fourth Row: Social Media Icons -->
+  <div class="footer-row">
+
+    <a href="https://linkedin.com" target="_blank" class="mx-2">
+      <i class="fa-brands fa-linkedin"></i>
+    </a>
+
+    <a href="https://github.com" target="_blank" class="mx-2">
+      <i class="fa-brands fa-github"></i>
+    </a>    
+
+    <a href="https://www.behance.net/patos-design" target="_blank" class="mx-2">
+      <i class="fa-brands fa-behance"></i>
+    </a>
+
+    <a href="https://www.instagram.com/p_a_t_o_s/" target="_blank" class="mx-2">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+  </div>
+
+<!-- Scroll to Top Button: -->
+<div class="div-botao ">
+  <button class="scroll-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">▲</button>
+</div>
+
+  <!-- Fifth Row: Legal Links -->
+  <div class="footer-row legal">
+    <a href="terms.html" class="mx-2">Terms & Conditions</a>
+    <a href="privacy.html" class="mx-2">Privacy Policy</a>
+    <a href="cookie.html" class="mx-2">Cookies Policy</a>
+  </div>
+
+  <!-- Sixth Row: Copyright -->
+  <div class="footer-row copyright" style="background-color: var(--ultramarine-dark);">
+    <p>copyright <span>©</span> made with ♡ by <a href="./index.html">patos:design</a> <span>☼</span> 2024</p>
+  </div>
+
+
+</footer>
+
+
+
+
+
+
+
+
+   
+
+
+
+
+  
+
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
+
+</body>
+
+
+</html>

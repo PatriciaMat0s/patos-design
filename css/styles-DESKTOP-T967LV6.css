@@ -1,0 +1,574 @@
+/* ****** GENERAL: */
+
+:root{
+  --turquoise: #3EC3C8;
+  --coral: #FF7278;  
+  --dark-violet: #321351;
+  --magenta: #7F1865;
+
+  --wasabi: #00CE93;
+  --yellow: #DDC022;
+
+  --perfect-pink: #DB4C85;
+  --hush-pink: #E07FB4;
+  --ultramarine: #4646F6;
+  --dark-turquoise: #287473;
+  --violet:#824DB7;
+  --hush-blue: #00aada;
+
+  --vanilla: #F5ECBB;
+  --med-gray: #7b7b7b;
+}
+
+
+html, body {
+  /* height p/a animaçao das bolinhas:  */
+  height: 100%;
+}
+
+.body-home {
+  background: linear-gradient(to right, #1F7785, #321E7C, #4D1C74);
+}
+
+*  {
+  color: var(--vanilla);
+} 
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto Mono';
+  src: url('../fonts/RobotoMono-Regular.ttf');
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--dark-violet);
+  font-size: 30px;
+} 
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--vanilla);
+  font-size: 20px;
+  line-height: 120%;
+
+}
+
+
+/* entry page: */
+/* .container-entry {
+  width: 80%;
+  text-align: center;
+} */
+
+
+
+
+
+
+/***** TOP NAV BAR v0.2: */
+/* General navbar styles */
+
+/* Mudar a cor do hamburguer icoon: */
+.navbar-toggler-icon{
+  background-image: url('../images/icons/hamburguer-icon.svg');
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler{
+  border: 2px solid var(--coral);
+ }
+
+
+.navbar {
+  padding: 1rem;
+  background-color: #321351e6;
+  
+  /* costumizar do bootstrap: */
+  --bs-navbar-color: none;
+}
+
+.navbar-logo img {
+  /* width: 50px; */
+  height: 65px;
+}
+
+.navbar-logo img:hover {
+opacity: 0.8;
+}
+
+/* Navbar link styles */
+.nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: color 0.3s;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: var(--dark-violet); /* Set default color for text */
+}
+
+/* Circle for icon background */
+.icon-circle {
+  width: 65px;
+  height: 65px;
+  background-color: var(--turquoise); /* Default circle color */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: background-color 0.3s;
+  font-size: .75rem;
+  font-style: none;
+  color: #321351;
+}
+
+/* Icon inside the circle */
+.icon-circle .icon {
+  width: 50px;
+  height: 50px;
+}
+
+/* Hide text initially */
+.icon-circle .link-text {
+  display: none;
+  position: absolute;
+  color: var(--dark-violet);
+}
+
+/* Hover effect: hide icon, show text, change colors */
+.icon-link:hover .icon-circle {
+  background-color: var(--coral);
+}
+
+.icon-link:hover .icon-circle .icon {
+  display: none; /* Hide icon on hover */
+}
+
+.icon-link:hover .icon-circle .link-text {
+  display: inline; /* Show text inside the circle on hover */
+}
+
+/* Active state for circle */
+.icon-link.active .icon-circle {
+  background-color: var(--yellow); /* Active color */
+}
+
+/* Disable hover effects for active link */
+.icon-link.active:hover .icon-circle {
+  background-color: var(--yellow); /* Maintain active color on hover */
+}
+
+.icon-link.active:hover .icon-circle .icon {
+  display: inline; /* Keep icon visible */
+}
+
+.icon-link.active:hover .icon-circle .link-text {
+  display: none; /* Hide text inside the circle */
+}
+
+/* Responsive behavior for smaller screens */
+@media (max-width: 576px) {
+  /* Make icons smaller */
+  .icon-circle {
+    width: 50px;
+    height: 50px;
+  }
+  .icon-circle .icon {
+    width: 55px;
+    height: 55px;
+  }
+  
+  /* Center icons in the collapsed menu */
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .nav-item {
+    margin-bottom: 10px;
+  }
+  
+  /* Adjust logo size */
+  .navbar-logo img {
+    /* width: 40px; */
+    height: 40px;
+  }
+}
+
+/* fim top nav bar v0.2 */
+
+
+
+
+
+
+
+
+ /* Full-page background gradient rotated 90º */
+
+
+
+
+
+/* ****** HOME: */
+
+/* subtítulo: */
+h2 {
+  color: var(--dark-violet);
+  font-size: 2rem;
+  margin-bottom: 0px;
+  text-align: LEFT;
+}
+
+.outer-div {
+    background-color: var(--wasabi); 
+    width: 35%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right:unset;
+    margin-left:unset;
+
+    border-top-right-radius: 50px; 
+    border-bottom-right-radius: 50px;
+
+    margin-bottom: 50px;
+}
+
+/* Media query para ipads e mobile: */
+@media (max-width: 768px) {
+
+  .outer-div {
+    width: 85%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left:0px;
+    margin:auto;
+    /* height: 5%; */
+    border-radius: 50px; 
+
+    /* centrar verticalmente o titulo na div: */
+    /*display: flex;*/
+   /* align-items: center;*/
+
+    margin-bottom: 50px;
+
+  }}
+
+  .outer-div h2 {
+    text-align: center;
+  }
+
+
+  .outer-div-more {
+    background-color: var(--yellow); 
+    width: 20%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right:unset;
+    margin-left:unset;
+
+    border-top-left-radius: 50px; 
+    border-bottom-left-radius: 50px;
+
+    margin-bottom: 50px;
+}
+
+
+
+/* coluna de texto esquerda: */
+
+div .container-fluid {
+  margin-left: 0px;
+}
+
+.texto-left p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding-left: 0px;
+
+}
+
+.texto-left {padding-right: 500px; }
+
+.texto-coral {color: var(--coral); }
+
+
+
+
+
+
+
+/* Cada célula-Circulo: */
+.circle-cell {
+  width: 180px; 
+  height: 180px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self:center;
+  font-weight: bold;
+  margin-top: -20px;
+  position: relative;  
+  opacity: 0.95;
+}
+
+.circle-cell-green1 {
+border: 4px solid var(--wasabi);
+}
+
+.circle-cell-green2 {
+  border: 4px solid var(--turquoise);}
+
+.circle-cell-green3 {
+border: 4px solid var(--hush-blue);}
+
+.circle-cell-rose1 {
+  border: 4px solid var(--hush-pink);
+}
+
+.circle-cell-rose2 { 
+  border:4px solid var(--coral);
+}
+
+.circle-cell-rose3 {
+  border: 4px solid var(--perfect-pink);
+}
+
+.circle-cell-rose3:hover {
+  opacity: 1;
+}
+
+
+
+.skill-cell {
+  width: 180px; 
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self:center;
+  font-weight: bold;
+  margin-top: -0px;
+  position: relative;  
+  opacity: 0.95;
+  color: var(--yellow);
+}
+
+
+
+/* Overlap effect for circles in the second row */
+.row + .row .circle-cell {
+  margin-top: -20px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ****** ANIMAÇÃO BOLINHAS: */
+
+/* 
+Mouse balls animation by Renato Ribeiro: 
+https://codepen.io/renatorib/pen/xxWemq
+*/
+
+
+
+
+#wrap {
+  width: 100%;
+ height: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--dark-violet);
+  line-height: 4rem;
+  margin-bottom: 100px;
+}
+
+#wrap p {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: #5AC5C9; 
+  font-size: 50px;
+  /* text-transform: uppercase; */
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+#wrap span {
+  font-size: 70px;
+  font-weight: 700;
+}
+
+#wrap .patos {
+  font-size: 70px;
+  font-weight: 700;
+  color: var(--coral);
+}
+
+
+.ball {
+  pointer-events: none;
+  position: absolute; 
+  width: 10px;
+  height: 10px;
+  border-radius: 50%; 
+  background: gray;
+  animation: implode 1s ease-in-out;
+  animation-fill-mode: both;
+  opacity: .5;
+}
+
+@keyframes implode {
+  100% {transform: scale(0)}
+}
+
+/* ****** FIM ANIMAÇÃO BOLINHAS */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ************Inicio do Footer */
+ 
+footer {
+  background-color: var(--dark-violet);
+  padding: 2% 0;
+  color: var(--yellow);
+  margin-bottom: 0;
+
+  padding: 0px!important;
+  padding-top: 50px!important;
+}
+
+.footer-row {
+  text-align: center;
+  margin: 1% 0;
+}
+
+nav a, .footer-row a, .footer-row i {
+  color: var(--yellow);
+  text-decoration: none;
+}
+
+.contacts span {
+  color: var(--yellow);
+  text-decoration: none;  
+  font-size: 0.75rem;
+  opacity: .75;
+
+}
+
+.logo span {
+  color: var(--turquoise);
+  font-style: italic;
+  font-size: 1rem;
+
+}
+
+.logo img {
+width: 250px;
+}
+
+.logo img:hover {
+ opacity: 0.8;
+  }
+
+
+.legal {
+  margin-top: 100px;
+}
+
+
+.legal a {
+  font-size: 0.8rem;
+  color: var(--med-gray)
+}
+
+.footer-row a:hover {
+  text-decoration: none;
+  color: var(--coral);
+}
+
+.footer-row i:hover {
+  color: var(--coral);
+}
+
+.copyright {
+  background-color: var(--magenta);
+}
+
+.copyright p {
+  color: var(--coral); 
+  font-size: 0.75rem;
+  padding-top: 1rem ;
+  padding-bottom: 1rem ;
+}
+
+/* Scroll-to-top button styling */
+.scroll-to-top {
+  position: relative;
+  margin-left: 85%;
+  padding: 10px 15px;
+  background-color: var(--ultramarine);
+  color: var(--turquoise);
+  border-radius: 50%;
+  border: none;
+  font-size: 1rem;
+  z-index: 100;
+}
+
+.scroll-to-top:hover {
+  background-color: var(--dark-turquoise);
+}
+
+
+
+
+
+
+/* ... fim do footer */
+
+
+
+
