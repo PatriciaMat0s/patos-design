@@ -1,0 +1,396 @@
+/* ****** GENERAL: */
+
+:root{
+  --turquoise: #3EC3C8;
+  --coral: #FF7278;  
+  --dark-violet: #321351;
+  --magenta: #7F1865;
+
+  --wasabi: #00CE93;
+  --yellow: #DDC022;
+
+  --perfect-pink: #DB4C85;
+  --ultramarine: #4646F6;
+  --dark-turquoise: #287473;
+  --violet:#824DB7;
+
+  --vanilla: #F5ECBB;
+  --med-gray: #c5c5c5;
+}
+
+
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto Mono';
+  src: url('../fonts/RobotoMono-Regular.ttf');
+}
+
+
+
+
+*  {
+  /* font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px; */
+  color: var(--vanilla);
+} 
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--dark-violet);
+  font-size: 30px;
+} 
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--vanilla);
+  font-size: 20px;
+  line-height: 120%;
+
+}
+
+
+/* entry page: */
+.container-entry {
+  width: 80%;
+  text-align: center;
+}
+
+
+
+
+
+
+/***** TOP NAV BAR v0.2: */
+/* General navbar styles */
+.navbar {
+  padding: 1rem;
+  background-color: #321351e6;
+  
+}
+
+.navbar-logo img {
+  /* width: 50px; */
+  height: 68px;
+}
+
+/* Navbar link styles */
+.nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: color 0.3s;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #321351; /* Set default color for text */
+}
+
+/* Circle for icon background */
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  background-color: #3EC3C8; /* Default circle color */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: background-color 0.3s;
+  font-size: 0.8rem;
+  color: #321351;
+}
+
+/* Icon inside the circle */
+.icon-circle .icon {
+  width: 50px;
+  height: 50px;
+}
+
+/* Hide text initially */
+.icon-circle .link-text {
+  display: none;
+  position: absolute;
+  color: #321351;
+}
+
+/* Hover effect: hide icon, show text, change colors */
+.icon-link:hover .icon-circle {
+  background-color: #FF7278;
+}
+
+.icon-link:hover .icon-circle .icon {
+  display: none; /* Hide icon on hover */
+}
+
+.icon-link:hover .icon-circle .link-text {
+  display: inline; /* Show text inside the circle on hover */
+}
+
+/* Active state for circle */
+.icon-link.active .icon-circle {
+  background-color: #DDC022; /* Active color */
+}
+
+/* Disable hover effects for active link */
+.icon-link.active:hover .icon-circle {
+  background-color: #DDC022; /* Maintain active color on hover */
+}
+
+.icon-link.active:hover .icon-circle .icon {
+  display: inline; /* Keep icon visible */
+}
+
+.icon-link.active:hover .icon-circle .link-text {
+  display: none; /* Hide text inside the circle */
+}
+
+/* Responsive behavior for smaller screens */
+@media (max-width: 576px) {
+  /* Make icons smaller */
+  .icon-circle {
+    width: 60px;
+    height: 60px;
+  }
+
+  .icon-circle .icon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  /* Center icons in the collapsed menu */
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .nav-item {
+    margin-bottom: 10px;
+  }
+  
+  /* Adjust logo size */
+  .navbar-logo img {
+    /* width: 40px; */
+    height: 10px;
+  }
+
+} /*fecho media query*/
+
+/* fim nav bar v0.2 */
+
+
+/***** TOP NAV BAR v0.1: */
+/* .navbar-nav, nav {
+  background-color: #321351;
+  opacity: 90%;
+}
+
+.nav-item a {
+  color: var(--coral);
+  text-decoration: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--turquoise);
+  font-size: 20px;
+  transition: 0.3s;
+}
+/* SVG icon styling */
+/* .nav-item a .icon img {
+  width: 35px;
+  height: 35px;
+  transition: opacity 0.3s;
+} */
+/* Text styling on hover */
+/* .nav-item a .text {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 13px;
+  white-space: nowrap;
+  background-color: var(--coral);
+  color: var(--dark-violet);
+} */
+/* Hover effect: hide icon, show text */
+/* .nav-item a:hover .icon img {
+  opacity: 0;
+}
+.nav-item a:hover .text {
+  opacity: 1;
+} */
+/* Center the navbar links */
+/* .navbar-nav {
+  justify-content: center;
+  width: 100%;
+}  */
+/* fim nav bar v0.1 */
+
+
+
+
+
+ /* Full-page background gradient rotated 90º */
+ body {
+  background: linear-gradient(to top, #1F7785, #321E7C, #4D1C74);
+
+  /* min-height: 100vh; */
+  /* display: flex; */
+  /* align-items: center; */
+ /* width: 85%;
+  margin:auto;*/
+}
+
+
+
+
+/* ****** HOME: */
+
+
+
+/* Cada célula-Circulo: */
+.circle-cell {
+  width: 200px; 
+  height: 200px;
+  border: 3px solid pink;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin: -20px auto;
+  position: relative;
+}
+
+/* Overlap effect for circles in the second row */
+.row + .row .circle-cell {
+  margin-top: -20px; 
+}
+
+
+/* Styling for the text column */
+.text-section p {
+  /* margin-left: 100px;  */
+  /* font-size: 16px; */
+}
+
+
+h2 {
+  color: var(--dark-violet);
+  /* text-align: left;  */
+  font-size: 30px;
+  color: var(--dark-violet);
+  font-weight: bold;
+
+
+}
+
+.outer-div {
+    background-color: var(--wasabi); 
+    width: 30%;
+    height: 10vh;
+    border-top-right-radius: 50px; 
+    border-bottom-right-radius: 50px;
+
+    /* centrar verticalmente o titulo na div: */
+    /*display: flex;*/
+   /* align-items: center;*/
+
+    margin-bottom: 50px;
+   
+
+}
+
+
+
+
+
+
+
+
+
+/* ****** ANIMAÇÃO BOLINHAS: */
+
+/* 
+Mouse balls animation by Renato Ribeiro: 
+https://codepen.io/renatorib/pen/xxWemq
+*/
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  /* position: relative; */
+  /* background: #222; */
+  /* font-family: "Open Sans"; */
+}
+
+#wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--dark-violet);
+  line-height: 4rem;
+}
+
+#wrap p {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: #5AC5C9; 
+  font-size: 50px;
+  /* text-transform: uppercase; */
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+#wrap span {
+  font-size: 70px;
+  font-weight: 700;
+}
+
+#wrap .patos {
+  font-size: 70px;
+  font-weight: 700;
+  color: #FF7278;
+}
+
+
+.ball {
+  pointer-events: none;
+  position: absolute; 
+  width: 10px;
+  height: 10px;
+  border-radius: 50%; 
+  background: gray;
+  animation: implode 1s ease-in-out;
+  animation-fill-mode: both;
+  opacity: .5;
+}
+
+@keyframes implode {
+  100% {transform: scale(0)}
+}
+
+/* ****** FIM ANIMAÇÃO BOLINHAS */
+
+
+
+
+
